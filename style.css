@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.box {
+    background-color: lightgreen;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.box0 {
+    /* Browser calculated the width based on the default rules */
+    width: auto;
+}
+
+.box1 {
+    /* Set a specific <length> value, which can be relative or absolute. */
+    width: 160px;
+}
+
+.box2 {
+    /* The intrinsic minimum width.
+    min-content makes the element as narrow as the content can be without overflow.
+    Example: Wraps the text on multiple lines to keep it's (html element) width to minumum */
+    width: min-content;
+}
+
+.box3 {
+    /* The intrinsic preferred width.
+    max-content makes the element as wide as the content without wrapping.
+    Therefore the content occupies entire available width. */
+    width: max-content;
+}
+
+.box4 {
+    /* Makes the element as wide as the content but constrained by a maximum value.
+    It Uses the available space, but not more than max-content
+    i.e. min(max-content, max(min-content, stretch))*/
+    width: fit-content;
+}
+
+.box5 {
+    /* Uses the fit-content formula with the available space replaced by the specified argument,
+    i.e. min(max-content, max(min-content, <length-percentage>)). */
+    width: fit-content(30%);
+}
