@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    width: 80vw;
+    height: 80vh;
+}
+
+.box {
+    width: 40vw;
+    height: 40vw;
+    background-color: lightgreen;
+}
+
+/* Using flexbox */
+body {
+    display: flex;
+    justify-content: center; /*align horizontally --- */
+    align-items: center; /*align vertically | */
+}
